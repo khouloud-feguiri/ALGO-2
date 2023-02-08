@@ -1,0 +1,50 @@
+ ALGORITHM yal_checkpoint
+    VAR
+       set1 , set2  : ARRAY_OF INTEGER type[5];
+       i,j : INTEGER ; 
+       s : INTEGER := 0 ; 
+    BEGIN
+        m:= set2.length-1 ;
+        n := set1.length-1 ; 
+        FOR  i from 0 to n DO 
+        FOR j from 0 to m DO
+        IF (set1[i] = set2[j])
+        return TRUE ; 
+        BREAK ; 
+        sum := sum + set1[i]
+        END_IF 
+        END_FOR
+
+        END_FOR
+
+        write (sum ); 
+       END
+
+ ALGORITHM yal_checkpoint 
+       VAR
+      
+       set1 , set2  : ARRAY_OF INTEGER type[5];
+       i,j : INTEGER; 
+       s : INTEGER := 0 ; 
+      
+         BEGIN 
+         n := set1.length-1 ;
+         m:= set2.length-1 ;
+
+         FOR i FROM 0 to n DO
+         FOR j FROM 0 to m DO 
+
+         IF ( set1[i] <> set2[j])
+        return TRUE ; 
+        BREAK ; 
+        sum : sum + set1[i] ; 
+        END_IF
+        END_FOR
+        END_FOR
+      
+      write (sum)
+      
+      
+      
+       END
+
